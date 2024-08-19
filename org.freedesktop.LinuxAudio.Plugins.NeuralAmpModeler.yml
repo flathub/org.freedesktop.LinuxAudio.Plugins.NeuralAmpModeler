@@ -22,8 +22,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/mikeoliphant/neural-amp-modeler-lv2
-        tag: 0.1.3
-        commit: 34c76282028a30cd4b20e69a5ca71ed4039f2020
+        tag: 0.1.4
+        commit: 0649b4a8229ba6c4b3c14ac8e5a3050d00594c16
       - type: patch
         path: nam-fixes.patch
       - type: file
