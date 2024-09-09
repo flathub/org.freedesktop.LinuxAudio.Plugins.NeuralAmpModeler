@@ -1,9 +1,9 @@
 id: org.freedesktop.LinuxAudio.Plugins.NeuralAmpModeler
-branch: '23.08'
+branch: '24.08'
 build-extension: true
 runtime: org.freedesktop.LinuxAudio.BaseExtension
 runtime-version: stable
-sdk: org.freedesktop.Sdk//23.08
+sdk: org.freedesktop.Sdk//24.08
 build-options:
   prefix: /app/extensions/Plugins/NeuralAmpModeler
 modules:
@@ -16,7 +16,6 @@ modules:
       - "install -Dm644 LICENCE.md ${FLATPAK_DEST}/share/licenses/NeuralAmpModelerLV2Plugin/LICENSE"
       - "install -Dm644 deps/NeuralAmpModelerCore/LICENSE ${FLATPAK_DEST}/share/licenses/NeuralAmpModeler/LICENSE"
       - "install -Dm644 --target-directory=${FLATPAK_DEST}/share/metainfo org.freedesktop.LinuxAudio.Plugins.NeuralAmpModeler.metainfo.xml"
-      - "appstream-compose --basename=${FLATPAK_ID} --prefix=${FLATPAK_DEST} --origin=flatpak ${FLATPAK_ID}"
     cleanup:
       - lib
     sources:
