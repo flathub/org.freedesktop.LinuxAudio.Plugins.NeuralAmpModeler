@@ -15,6 +15,17 @@
   <url type="bugtracker">https://github.com/mikeoliphant/neural-amp-modeler-lv2/issues</url>
   <url type="homepage">https://github.com/sdatkinson/neural-amp-modeler</url>
   <releases>
+    <release version="0.1.5" date="2024-11-04">
+      <url>https://github.com/mikeoliphant/neural-amp-modeler-lv2/releases/tag/0.1.5</url>
+      <description>
+        <ul>
+          <li>Use RTNeural for NAM LSTM models (approx. 2x performance increase)</li>
+          <li>Added support for RTNeural keras json models (ie: Aida-X models)</li>
+          <li>Updated to latest NAM core</li>
+          <li>Removed dc blocker</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.1.4" date="2024-08-17">
       <url>https://github.com/mikeoliphant/neural-amp-modeler-lv2/releases/tag/0.1.4</url>
       <description>
