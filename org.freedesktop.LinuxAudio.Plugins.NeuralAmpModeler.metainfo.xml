@@ -15,6 +15,9 @@
   <url type="bugtracker">https://github.com/mikeoliphant/neural-amp-modeler-lv2/issues</url>
   <url type="homepage">https://github.com/sdatkinson/neural-amp-modeler</url>
   <releases>
+    <release version="0.1.7" date="2025-02-13">
+      <url>https://github.com/mikeoliphant/neural-amp-modeler-lv2/releases/tag/v0.1.7</url>
+    </release>
     <release version="0.1.6" date="2024-12-02">
       <url>https://github.com/mikeoliphant/neural-amp-modeler-lv2/releases/tag/0.1.6</url>
       <description>
