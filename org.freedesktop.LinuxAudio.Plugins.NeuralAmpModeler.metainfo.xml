@@ -17,6 +17,11 @@
   <releases>
     <release version="0.1.7" date="2025-02-13">
       <url>https://github.com/mikeoliphant/neural-amp-modeler-lv2/releases/tag/v0.1.7</url>
+      <description>
+        <ul>
+          <li>New NeuralAudio WaveNet and LSTM implementation with significantly increased performance</li>
+        </ul>
+      </description>
     </release>
     <release version="0.1.6" date="2024-12-02">
       <url>https://github.com/mikeoliphant/neural-amp-modeler-lv2/releases/tag/0.1.6</url>
