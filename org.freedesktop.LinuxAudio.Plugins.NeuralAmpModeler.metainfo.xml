@@ -15,6 +15,17 @@
   <url type="bugtracker">https://github.com/mikeoliphant/neural-amp-modeler-lv2/issues</url>
   <url type="homepage">https://github.com/sdatkinson/neural-amp-modeler</url>
   <releases>
+    <release version="0.1.8" date="2025-05-27">
+      <url>https://github.com/mikeoliphant/neural-amp-modeler-lv2/releases/tag/v0.1.8</url>
+      <description>
+        <ul>
+          <li>Very fast pre-warm for WaveNet models</li>
+          <li>Fixed some issues loading non-static LSTM models</li>
+          <li>Fixed some issues loading certain Aida-X models</li>
+          <li>Fixed an issue loading large non-standard WaveNet models (ie: "hyper" accuracy)</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.1.7" date="2025-02-13">
       <url>https://github.com/mikeoliphant/neural-amp-modeler-lv2/releases/tag/v0.1.7</url>
       <description>
