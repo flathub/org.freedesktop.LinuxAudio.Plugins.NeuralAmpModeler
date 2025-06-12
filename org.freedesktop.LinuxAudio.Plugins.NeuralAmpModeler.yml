@@ -24,8 +24,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/mikeoliphant/neural-amp-modeler-lv2
-        tag: v0.1.8
-        commit: 8e3b71c13d3da3dc485b66e592de892a800a422f
+        tag: v0.1.9
+        commit: ce7cbeb8f3824c4a7d2f67976edd753b81ac9d90
       - type: file
         url: https://github.com/cpm-cmake/CPM.cmake/releases/download/v0.38.6/CPM.cmake
         sha256: 11c3fa5f1ba14f15d31c2fb63dbc8628ee133d81c8d764caad9a8db9e0bacb07
