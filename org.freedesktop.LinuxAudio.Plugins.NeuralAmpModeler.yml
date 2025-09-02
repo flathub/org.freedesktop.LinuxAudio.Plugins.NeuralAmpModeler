@@ -1,9 +1,9 @@
 id: org.freedesktop.LinuxAudio.Plugins.NeuralAmpModeler
-branch: '24.08'
+branch: '25.08'
 build-extension: true
 runtime: org.freedesktop.LinuxAudio.BaseExtension
 runtime-version: stable
-sdk: org.freedesktop.Sdk//24.08
+sdk: org.freedesktop.Sdk//25.08
 build-options:
   prefix: /app/extensions/Plugins/NeuralAmpModeler
 modules:
