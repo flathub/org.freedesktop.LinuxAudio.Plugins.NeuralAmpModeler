@@ -9,29 +9,22 @@ build-options:
 modules:
   - name: NeuralAmpModeler
     buildsystem: cmake-ninja
-    build-options:
-      env:
-        CPM_SOURCE_CACHE: /run/build/NeuralAmpModeler/.cache/CPM
     config-opts:
       - -DCMAKE_BUILD_TYPE=Release
+      - -DBUILD_INTERNAL_STATIC_WAVENET=ON
+      - -DBUILD_INTERNAL_STATIC_LSTM=ON
+      - -DBUILD_NAMCORE=ON
+      - -DBUILD_STATIC_RTNEURAL=ON
     post-install:
       - "mv ${FLATPAK_DEST}/lib/lv2 ${FLATPAK_DEST}"
-      - "install -Dm644 LICENCE.md ${FLATPAK_DEST}/share/licenses/NeuralAmpModelerLV2Plugin/LICENSE"
-      - "install -Dm644 deps/NeuralAudio/deps/NeuralAmpModelerCore/LICENSE ${FLATPAK_DEST}/share/licenses/NeuralAmpModeler/LICENSE"
-      - "install -Dm644 --target-directory=${FLATPAK_DEST}/share/metainfo org.freedesktop.LinuxAudio.Plugins.NeuralAmpModeler.metainfo.xml"
+      - "install -Dm644 deps/NeuralAudio/deps/NeuralAmpModelerCore/LICENSE ${FLATPAK_DEST}/share/licenses/${FLATPAK_ID}/NeuralAmpModelerCore/LICENSE"
+      - "install -Dm644 org.freedesktop.LinuxAudio.Plugins.NeuralAmpModeler.metainfo.xml -t ${FLATPAK_DEST}/share/metainfo"
     cleanup:
       - lib
     sources:
       - type: git
         url: https://github.com/mikeoliphant/neural-amp-modeler-lv2
-        tag: v0.1.9
-        commit: ce7cbeb8f3824c4a7d2f67976edd753b81ac9d90
-      - type: file
-        url: https://github.com/cpm-cmake/CPM.cmake/releases/download/v0.38.6/CPM.cmake
-        sha256: 11c3fa5f1ba14f15d31c2fb63dbc8628ee133d81c8d764caad9a8db9e0bacb07
-        dest: .cache/CPM/cpm
-        dest-filename: CPM_0.38.6.cmake
-      - type: patch
-        path: nam-fixes.patch
+        tag: v0.2.0
+        commit: 844766e61418b9a72b72537c34dd940a56111858
       - type: file
         path: org.freedesktop.LinuxAudio.Plugins.NeuralAmpModeler.metainfo.xml
