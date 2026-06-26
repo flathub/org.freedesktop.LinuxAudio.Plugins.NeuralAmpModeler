@@ -24,7 +24,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/mikeoliphant/neural-amp-modeler-lv2
-        tag: v0.2.0
-        commit: 844766e61418b9a72b72537c34dd940a56111858
+        tag: v0.2.1
+        commit: 3742056b89328fa61b907f6dcd28d766bad10e8a
       - type: file
         path: org.freedesktop.LinuxAudio.Plugins.NeuralAmpModeler.metainfo.xml

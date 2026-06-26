@@ -15,8 +15,23 @@
   <url type="bugtracker">https://github.com/mikeoliphant/neural-amp-modeler-lv2/issues</url>
   <url type="homepage">https://github.com/sdatkinson/neural-amp-modeler</url>
   <releases>
+    <release version="0.2.1" date="2026-06-26">
+      <url>https://github.com/mikeoliphant/neural-amp-modeler-lv2/releases/tag/v0.1.9</url>
+      <description>
+        <ul>
+          <li>Added oversampling support</li>
+          <li>Fixed smart bypass on NAM A2 models</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.2.0" date="2026-06-02">
       <url>https://github.com/mikeoliphant/neural-amp-modeler-lv2/releases/tag/v0.2.0</url>
+      <description>
+        <ul>
+          <li>NAM A2 model support with quality scaling</li>
+          <li>Optional (compile-time) support for smart bypass on silence</li>
+        </ul>
+      </description>
     </release>
     <release version="0.1.9" date="2025-06-09">
       <url>https://github.com/mikeoliphant/neural-amp-modeler-lv2/releases/tag/v0.1.9</url>
