@@ -11,8 +11,14 @@ modules:
     buildsystem: cmake-ninja
     config-opts:
       - -DCMAKE_BUILD_TYPE=Release
+      - -DUSE_NATIVE_ARCH=ON
+      - -DSMART_BYPASS_ENABLED=ON
+      - -DNAM_ENABLE_A2_FAST=ON
+      - -DNAM_USE_INLINE_GEMM=ON
       - -DBUILD_INTERNAL_STATIC_WAVENET=ON
       - -DBUILD_INTERNAL_STATIC_LSTM=ON
+      - -DBUILD_STATIC_INTERNAL_NAMA2=ON
+      - -DENABLE_MULTIFRAME_8X8_CONVOLUTION=ON
       - -DBUILD_NAMCORE=ON
       - -DBUILD_STATIC_RTNEURAL=ON
     post-install:
@@ -24,7 +30,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/mikeoliphant/neural-amp-modeler-lv2
-        tag: v0.2.1
-        commit: 3742056b89328fa61b907f6dcd28d766bad10e8a
+        tag: v0.2.2
+        commit: 35c28a52ec0a89af16208e953544dc96e13dde20
       - type: file
         path: org.freedesktop.LinuxAudio.Plugins.NeuralAmpModeler.metainfo.xml
