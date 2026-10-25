@@ -18,7 +18,6 @@ modules:
       - -DBUILD_INTERNAL_STATIC_WAVENET=ON
       - -DBUILD_INTERNAL_STATIC_LSTM=ON
       - -DBUILD_STATIC_INTERNAL_NAMA2=ON
-      - -DENABLE_MULTIFRAME_8X8_CONVOLUTION=ON
       - -DBUILD_NAMCORE=ON
       - -DBUILD_STATIC_RTNEURAL=ON
     post-install:
@@ -30,7 +29,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/mikeoliphant/neural-amp-modeler-lv2
-        tag: v0.2.2
-        commit: 35c28a52ec0a89af16208e953544dc96e13dde20
+        tag: v0.2.3
+        commit: 3d0e1c26a4cfb7085b185811dd564f7ec7ec4991
       - type: file
         path: org.freedesktop.LinuxAudio.Plugins.NeuralAmpModeler.metainfo.xml
